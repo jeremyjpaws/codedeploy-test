@@ -1,8 +1,14 @@
 #!/bin/bash -xe
 echo "begin rvm test..."
-ruby --version
+whoami
+echo $PATH
+printenv
+export PATH=$PATH:/usr/local/rvm:/usr/local/rvm/bin
+echo $PATH
 which ruby
 which rvm
+ruby --version
+rvm --version
 rvm list
 # rvm use 2.5.3 --default
 rvm use 2.0.0 --default
