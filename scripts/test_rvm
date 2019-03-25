@@ -1,0 +1,11 @@
+#!/bin/bash -xe
+echo "begin rvm test..."
+ruby --version
+which ruby
+which rvm
+rvm list
+# rvm use 2.5.3 --default
+rvm use 2.0.0 --default
+rvm list
+ruby --version
+echo "fin rvm test!"
