@@ -1,4 +1,7 @@
-#!/bin/bash -xe
+#!/bin/bash -lxe
+echo "begin environment carry test"
+FOOBAR="from test_rvm"
+export FOOBAR
 echo "begin rvm test..."
 whoami
 echo $PATH
