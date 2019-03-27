@@ -1,0 +1,4 @@
+#!/bin/bash -xe
+BEFORE="from before"
+export BEFORE
+
