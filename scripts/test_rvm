@@ -1,4 +1,4 @@
-#!/bin/bash -lxe
+#!/bin/bash -l
 echo "begin environment carry test"
 FOOBAR="from test_rvm"
 export FOOBAR
@@ -14,7 +14,7 @@ ruby --version
 rvm --version
 rvm list
 # rvm use 2.5.3 --default
-rvm use 2.0.0 --default
+rvm use 2.5.3 --default
 rvm list
 ruby --version
 echo "fin rvm test!"
