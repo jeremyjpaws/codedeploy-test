@@ -1,0 +1,14 @@
+#!/bin/bash -l
+echo "$_"
+echo "Begin call_rvm..."
+whoami
+printenv
+export PATH=$PATH:/usr/local/rvm:/usr/local/rvm/bin
+which ruby
+which rvm
+ruby --version
+rvm --version
+echo "Starting call..."
+./run_rvm
+echo "...After call, back in call_rvm."
+echo "End call_rvm."
